@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Illogical thinker, Joel Sweetman, motion graphics, multimedia" />
+<link href="images/elephant_icon.png" rel="shortcut icon" /> 
+<title>Illogical Thinker - Contact :: Website of Joel Sweetman</title>
+
+<link type="text/css" rel="stylesheet" href="main.css" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!--<script type="text/javascript" src="js/page_fade.js"></script>-->
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<script type="text/javascript" src="js/validate.js"></script>
+<script type="text/javascript" stc="js/simpleModal.js"></script>
+
+<!--<script type="text/javascript">
+
+		
+		$(function() {
+			$("#slideContent").easySlider();
+			$('.contact').click(function (e) {
+				e.preventDefault();
+				$('#modalContact').modal({
+					overlayCss: {backgroundColor: '#000', cursor:'default'},
+					containerCss: {height: 500, width: 800, backgroundColor: '#444', color:'#fff', 
+					backgroundImage: 'url(images/bg_contact.jpg)'}
+					});
+				$('.simplemodal-overlay').click(
+				function(){
+					$(this).fadeOut();
+					$.modal.close();
+					}
+				);
+			});
+			$("#login").validate({
+				rules: {
+					username: "required",
+					password: "required",
+					username: {required: true, minlength: 2},
+					password: {required: true, minlength: 5}
+					},
+					messages: {
+						username: {
+							required: "Please enter a username",
+							minlength: "Your username must consist of at least 2 characters"
+							},
+							password: {
+								required: "Please provide a password",
+								minlength: "Your password must be at least 5 characters long"}
+								}
+								});
+			$("#modalForm").validate({
+				rules: {
+					name: "required",
+					email: {
+							required: true,
+							email: true
+							},
+					comment: "required"
+				}
+			});		
+			$('a.new-window').click(function(){
+				window.open(this.href);
+				return false;
+				});
+		});
+		
+		function validate_email(field,alerttxt)
+		{
+		with (field)
+		  {
+		  apos=value.indexOf("@");
+		  dotpos=value.lastIndexOf(".");
+		  if (apos<1||dotpos-apos<2)
+			{alert(alerttxt);return false;}
+		  else {return true;}
+		  }
+		}
+
+		function validate_form(thisform)
+		{
+		with (thisform)
+		  {
+		  if (validate_email(email,"Not a valid e-mail address!")==false)
+			{email.focus();return false;}
+		  }
+		}
+	</script>-->
+
+
+
+	<script>
+	$(document).ready(function(){
+		$("#slider").easySlider({
+		auto: true,
+		continuous: true
+		});
+	});
+    </script>
+<!--<script type="text/javascript">
+	<!--
+	setrollover('arrow_left.png',	'left');
+	setrollover('arrow_right.png',	'right');
+	// </script>-->
+<!--<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.7.2.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.formatCurrency-1.0.0.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.fontavailable-1.1.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+
+	<script type="text/javascript" src="/js/jquery.browser.min.js"></script>
+	<script type="text/javascript" src="/js/cufon.js"></script>
+	<script type="text/javascript" src="/js/Museo.font.js"></script>
+	<script type="text/javascript" src="/js/Junction.font.js"></script>
+	<script type="text/javascript" src="/js/global.js"></script>-->
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31222294-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<style type="text/css">
+
+<body>
+{background:#f3f3f3 url(images/diagonal_lines.png) repeat-x right top;}
+{font-family:Arial, Helvetica, sans-serif; font-size:10px;}
+p.small {
+	line-height:155%;
+}
+p.link_top{font-style:bold; text-align:center; position:relative; top:-15px; color:white;}
+p.link_bottom{font-style:italic; font-size:12px; text-align:center; position:relative; top:-31px; color:white;}
+p.quote{font-style:normal; font-size:19px; text-align:center; position:relative; font-family:Arial; color:#A7A9AC;}
+p.regular_text{font-style:normal; font-size:13px; text-align:left; position:relative; font-family:Arial, Helvetica, Sans-serif; text-shadow: 0px 2px 3px #222; color:#ffffff;}
+p.feature_title{font-style:bold; font-size:18px; text-align:left; font-family:Helvetica; 
+text-shadow: 0px 2px 1px #222;}
+
+{opacity:0.4; filter:alpha(opacity=40);}
+
+#slider ul, #slider li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:700px;
+		height:306px;
+		overflow:hidden; 
+		}				
+
+#form {margin:0; padding:0; margin-top:20px; margin-left:10px;}
+.button {width:60px; font-color:#ffffff;}
+#p {margin:0 0 5px 0; padding:0;}
+.error {color:#FFFFFF; margin:0 0 10px 0; font-size:10px;}
+.accept {color:#339966; margin: 0 0 10px 0;}
+.label{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+fieldset{
+	border:none;
+}
+
+#send_button_container{
+	width:200px;
+	height:50px;
+	margin-left:130px;
+	margin-top:5px;
+}
+
+select, input, textarea {
+  font: 80% sans-serif;
+  font-color:white; 
+  resize: none;
+  /*border: 1px solid #dedede;*/
+  border:none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding-left:2px;
+  background-color:#151e27;
+ }
+ 
+a{ text-decoration:none; }
+
+#wrapper{
+	width:100%;
+	height:520px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+}
+
+.big_bold_text{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 40px;
+	margin-top:8px;
+	width:400px;
+	height:100px;
+}
+
+
+</style>
+
+
+	<div id="top_picture"></div>
+
+   
+    <div id="outercontainerheader">
+        <div id="image_container">
+            <div id="illogical_cloud">
+            <a href="index.html">
+            <img src="images/illogical_thinker_cloud2.png">
+            </a>
+            </div>
+            <div id="floating_elephant">
+            </div>
+        </div> 
+        
+        <div id="linkmenu">
+          <div class="link_box_lit">
+                
+            <p class="link_top"><b>CONTACT</b></p>
+            <p class="link_bottom">Have a question?</p>
+                
+          </div>
+            
+          <!--<div class="link_box">
+                <a href="Illogical_blog.html">
+            <p class="link_top"><b>BLOG</b></p>     
+            <p class="link_bottom">My Ramblings</p>
+                </a>    	 
+          </div> -->
+         
+    
+           <div class="link_box">
+           <a href="work.html">
+           <p class="link_top"><b>WORK</b></p>
+           <p class="link_bottom">My Portfolio</p> 
+           </a>
+           </div>
+           
+           <div class="link_box">
+           <a href="index.html">
+           <p class="link_top"><b>HOME</b></p>
+           <p class="link_bottom">Back to the start</p> 
+           </a>
+           </div> 
+        </div>
+        
+      <div id="container">  
+            <div id="contact_box">
+            <!--<div id="text_featured">
+            </div>-->
+                <div id="contact_scroller_box">
+                    <div id="info_top_section">
+                        <div id="scroller_arrows_box"></div>
+           <!--<div class="darker_line"></div>-->
+           					<div id="feature_info_header">
+                        		<div id="contact_featured">
+                        			<p class="feature_title"><b>Hey Guys!</b></p>
+                            	</div>
+                        	</div>
+                        	<div id="contact_info_text">
+                          		<p class="regular_text"><b>Any project related material, questions, or general enquiries?</b></p>
+                          		<p class="regular_text"><!--Please use the form to the right to send me a question or comment. Please allow 24-48 hours to get back to you if a response is needed.-->It's possible to contact me via phone, mobile or email. Please allow 24-48 hours to get back to you if a response is needed.</p>
+                          
+                          		<p class="regular_text">Feel like simply chatting? That's fine too. Go for it!</p>
+                         
+                     		</div>
+                    	</div>
+                	</div>
+                	<div id="contact_info_box">
+               		<div id="box_header_title">
+                		<img src="images/text_contact.png" />
+                	</div>
+                	<!--<div class="white_line"></div>-->
+    				<br />
+                	<div class="big_bold_text">Home: 9272 2793<br />
+               		Mobile: 04 1768 2412<br />
+                	Email: joelsweetman174@msn.com/</span><br />
+                	</div>
+                
+                
+                <!--<form id="modalForm" class="modalForm" method="post" action="contact.php" onsubmit="return validate_form(this);">-->
+                <!--<fieldset>-->
+                
+    <!--<form action="contact.php" method="post" class="regular_text">
+                                
+    
+                                 </ol>
+                                
+                                 </fieldset>
+                  <p><input type="checkbox" name="check[]" value="real_checker"><span id="regular_text">Are you a real person?</span></form></p>
+                    <div id="send_button_container">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear"> 
+                    </div>-->
+              </div>
+            </div>
+            <div id="footer_inside_box">
+            <div id="footer_container">
+                <div id="copyright">
+                Copyright © 2012<br />
+                Joel Sweetman<br />
+                04 1768 2412<br />
+                </div>
+                <div id="emblem_holder">Follow me via
+                    <div id="emblems">
+                        <a href="http://en-gb.facebook.com/big.ole.joel" target="_blank">
+                        <div class="emblem_container"><img src="images/emblem_facebook.png" /></div>
+                        </a>
+                        <!--<a href="http://twitter.com/#!/saccharineman" target="_blank">
+                        <div class="emblem_container"><img src="images/emblem_twitter.png" /></div>
+                        </a>-->
+                        <a href="http://vimeo.com/user7527629" target="_blank">
+                        <div class="emblem_container"><img src="images/emblem_vimeo.png" /></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+          
+      </div>
+    </div>
+    </div>
+    </div>
+    <div id="wrapper">
+    <div id="footer_grass"></div>
+     <div id="footer_box"></div>
+        
+        </div>
+    </div>
+</div>
+</body>
+</html>
