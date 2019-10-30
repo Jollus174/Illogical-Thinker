@@ -1,0 +1,22 @@
+{
+	"default": ["build"],
+	"scripts": [
+		"jshint",
+		"copy:libs",
+		"copy:matterScripts",
+		"copy:webbyScripts",
+		"rig",
+		"concat"
+	],
+	"styles": ["sass", "autoprefixer"],
+	"fonts": ["copy:fonts"],
+	"images": ["imagemin:svg", "copy:images", "svgstore"],
+	"videos": ["copy:videos"],
+	"html": ["assemble", "copy:html", "clean:tempHtml"],
+	"build": ["devbuild", "cssmin", "concat", "uglify"],
+	"devbuild": ["scripts", "images", "videos", "styles", "fonts", "html"],
+	"serve": ["devbuild", "browserSync:standard", "watch"],
+	"serve-iis": ["devbuild", "browserSync:iis", "watch"],
+	"build-Debug": ["devbuild"],
+	"build-Release": ["build"]
+}

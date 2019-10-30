@@ -1,0 +1,12 @@
+{
+	"iisHostname": "bravo.local",
+	"root": ".",
+		"src": "assets",
+		"dist": "../Website/",
+	"stylesDir": "css",
+	"scriptsDir": "js",
+	"imagesDir": "img",
+	"svgIconsDir": "",
+	"svgRawDir": "svgRaw",
+	"svgDir": "svg"
+}

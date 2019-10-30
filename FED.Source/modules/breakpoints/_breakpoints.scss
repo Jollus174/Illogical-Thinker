@@ -1,0 +1,32 @@
+// ==========================================================================
+//   Global breakpoints
+// ==========================================================================
+
+body:before {
+	content: "screen-xs";
+	display: none;
+}
+
+@media (min-width: $screen-sm-min) {
+
+	body:before {
+		content: "screen-sm";
+	}
+
+}
+
+@media (min-width: $screen-md-min) {
+
+	body:before {
+		content: "screen-md";
+	}
+
+}
+
+@media (min-width: $screen-lg-min) {
+
+	body:before {
+		content: "screen-lg";
+	}
+
+}
