@@ -1,6 +1,10 @@
 /* ==========================================================================
    Global header class
-   ========================================================================== */
+	 ========================================================================== */
+	 
+	header {
+		margin-top: 50px;
+	}
 
 .top-picture {
 	position: absolute;
@@ -9,33 +13,39 @@
 	height: 261px;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 0;
+}
+
+.logo {
+	position: relative;
+	max-width: 478px;
+	display: block;
+
+	&:hover {
+		.floating-elephant {
+			top: 40px;
+		}
+	}
+
+	.cloud {
+		position: relative;
+		z-index: 2;
+	}
+	
+	.floating-elephant {
+		width: 70px;
+		height: 150px;
+		position: absolute;
+		top: 45px;
+		right: -35px;
+		background-image: url(../img/floating-elephant.png);
+		z-index: 1;
+		transition: top 800ms ease;
+	}
 }
 
 main {
-	min-height: 1000px;
+	min-height: 500px;
 }
 
 // @media (min-width: $screen-sm-min) {
-
-// 	header {
-// 		padding: 60px 0 0;
-// 	}
-
-// 	nav {
-// 		float: right;
-// 		margin: 0;
-
-// 		li {
-// 			height: 50px;
-// 			margin-left: 40px;
-// 		}
-// 	}
-
-// 	.logo {
-// 		width: 110px;
-// 		height: 48px;
-// 		float: left;
-// 	}
-
-// }
