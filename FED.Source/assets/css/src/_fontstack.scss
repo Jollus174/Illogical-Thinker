@@ -1,0 +1,48 @@
+// ==========================================================================
+//   Web safe font stacks
+// ==========================================================================
+
+
+// Sans-serif Fonts
+$arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$impact: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans serif;
+
+// Serif Fonts
+$baskerville: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+$georgia: Georgia, Times, 'Times New Roman', serif;
+$times-new-roman: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+
+// Monospaced Fonts
+$courier-new: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+$lucida-sans-typewriter: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace;
+
+// Other
+
+$mark-pro: 'MarkPro', Helvetica, Arial, sans-serif;
+$slabo: 'Slabo 13px', serif;
+
+@font-face {
+	font-family: 'MarkPro';
+	src: url('../fonts/MarkPro-Medium.woff2') format('woff2'),
+		url('../fonts/MarkPro-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MarkPro';
+	src: url('../fonts/MarkPro-Bold.woff2') format('woff2'),
+		url('../fonts/MarkPro-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MarkPro';
+	src: url('../fonts/MarkPro.woff2') format('woff2'),
+		url('../fonts/MarkPro.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+

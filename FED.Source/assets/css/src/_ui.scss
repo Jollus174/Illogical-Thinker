@@ -1,0 +1,104 @@
+/* ==========================================================================
+   UI elements
+   ========================================================================== */
+
+.btn {
+	// background-image: linear-gradient(to bottom, #fe9a2a, #fe8220);
+	// color: $white;
+	// white-space: normal;
+	border-radius: 2px;
+	font-weight: 500;
+	border: 0;
+
+	// &:focus,
+	// &:hover {
+	// 	background-color: $black;
+	// 	// background-image: linear-gradient(to bottom, #feab2a, #fe9420);
+	// 	color: $white;
+	// }
+
+	// &:active {
+	// 	// background-image: linear-gradient(to bottom, #fe9420, #feab2a);
+	// 	color: $white;
+	// }
+}
+
+.btn-immersive-primary,
+.btn-immersive-secondary {
+	@extend .btn;
+	background-color: $brand-primary;
+	background-image: none;
+	padding: 11px 48px 10px 48px;
+	margin-bottom: 25px;
+	transition: 0.2s ease all;
+}
+
+.btn-immersive-primary {
+	border: 1px solid $brand-primary;
+	&:focus,
+	&:hover,
+	&:active {
+		background-color: $white;
+		background-image: none;
+		color: $green;
+		border: 1px solid $white;
+	}
+}
+.btn-immersive-secondary {
+	background-color: transparent;
+	border: 1px solid $white;
+	&:focus,
+	&:hover,
+	&:active {
+		background-color: $white;
+		color: $black;
+		border: 1px solid $white;
+		background-image: none;
+	}
+}
+
+.btn-primary {
+	&-inverse {
+		background-color: $white;
+		color: $brand-primary;
+		background-image: none;
+
+		&:focus,
+		&:hover {
+			color: $white;
+			background-image: none;
+			background-color: $brand-tertiary;
+		}
+	}
+}
+
+.btn-primary-footer {
+	background-color: $white;
+	color: $brand-primary;
+	background-image: none;
+	font-size: 22px;
+	padding: 8px 24px;
+
+	&:focus,
+	&:hover {
+		color: $dark-grey;
+	}
+}
+
+button.close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	color: #fff;
+	opacity: 1;
+	border: 0;
+	z-index: 5;
+	font-weight: 400;
+
+	&:hover {
+		color: #fff;
+		opacity: 0.9;
+	}
+}

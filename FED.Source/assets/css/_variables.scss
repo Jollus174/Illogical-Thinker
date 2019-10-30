@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+//Type settings
+$base-font-family: $mark-pro;
+$heading-font: $base-font-family;
+$quote-font: $slabo;
+
+$base-font-size: 16px;
+$base-line-height: 26px;
+
+$h1-size-xs: 32px;
+$h2-size-xs: 18px;
+$h3-size-xs: 20px;
+$h4-size-xs: 14px;
+$h5-size-xs: 28px;
+$h6-size-xs: 16px;
+
+$h1-size-sm: 36px;
+$h2-size-sm: 24px;
+$h3-size-sm: 32px;
+$h4-size-sm: 16px;
+$h5-size-sm: 36px;
+$h6-size-sm: 20px;
+
+$h1-size-md: 38px;
+$h2-size-md: 24px;
+$h3-size-md: 32px;
+$h4-size-md: 16px;
+$h5-size-md: 36px;
+$h6-size-md: 20px;
+
+$h1-size-lg: 52px;
+$h2-size-lg: 24px;
+$h3-size-lg: 32px;
+$h4-size-lg: 16px;
+$h5-size-lg: 36px;
+$h6-size-lg: 20px;
+
+// Layout Settings
+$base-spacing-unit: 20px;
+$half-spacing-unit: ($base-spacing-unit / 2);
+$double-spacing-unit: ($base-spacing-unit * 2);
+
+// Colour settings
+$purple: #5b59f8;
+$green: #00bf8c;
+$dark-grey: #343e47;
+$mid-grey: #999ea3;
+$white: #fff;
+$mitreblue: #0060af;
+$light-grey: #f4f4f4;
+
+$black: #000;
+$white: #fff;
+$red: #e30613;
+$space-dark-blue: #212224;
+$space-black: #1d1d1e;
+
+$brand-primary: $green;
+$brand-secondary: $dark-grey;
+$brand-tertiary: $mid-grey;
+$brand-quartenary: $red;
+$brand-quinary: $black;
+$brand-danger: $red;
+
+$short-trans: 100ms;
+$reg-trans: 200ms;
+$long-trans: 300ms;
+
+$nav-trans: 400ms;
+
+/* ==========================================================================
+   Bootstrap Overrides
+   ========================================================================== */
+
+$text-color: $brand-secondary;
+$link-color: $brand-primary;
+$headings-color: $brand-secondary;
+
+$font-family-base: $base-font-family;
+$font-size-base: $base-font-size;
+$line-height-base: ($base-line-height / $base-font-size);
+
+//$grid-gutter-width: 20px;
+$screen-lg: 1220px;
+$container-large-desktop: 1204px;
+
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+
+$btn-border-radius-base: 0;
+
+//Form styles
+$input-border-focus: $mid-grey;
+
+//$dropdown-border:                none;
+//$dropdown-fallback-border:       none;
+//$dropdown-divider-bg:            #979797;
+
+//$dropdown-link-color:            $red;
+//$dropdown-link-hover-color:      $red;
+//$dropdown-link-hover-bg:         rgba(155, 155, 155, .05);
+
+$modal-backdrop-bg: #9b9b9b;
+$modal-backdrop-opacity: 0.8;

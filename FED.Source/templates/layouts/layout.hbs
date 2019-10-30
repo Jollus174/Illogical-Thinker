@@ -13,134 +13,31 @@
 		Illogical Thinker :: Website of Joel Sweetman
 	</title>
 
-	<link rel="icon" type="image/png" href="/elephant_icon.png" sizes="16x16">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00b489">
+	<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
 	<meta name="theme-color" content="#00b489">
 
 	<meta name="description" content="A creative digital agency that works hard to earn your applause. We imagine, design and build audience-centred digital experiences with mobile, web and emerging technologies.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	{{!-- <link href="https://fonts.googleapis.com/css?family=Slabo+13px" rel="stylesheet"> --}}
-
-	{{#if production}}
-	<link rel="stylesheet" href="/css/style.min.css" />
-	{{else}}
 	<link rel="stylesheet" href="/css/style.css" />
-	{{/if}}
-
-	<meta property="og:title" content="Bravo! Digital Product Studio">
-	<meta property="og:url" content="http://www.studiobravo.com.au/">
-	<meta property="og:site_name" content="Bravo!">
-	<meta property="og:type" content="website" />
-	<meta property="og:description" content="A creative digital agency that works hard to earn your applause. We imagine, design and build audience-centred digital experiences with mobile, web and emerging technologies." />
-	<meta property="og:image" content="http://www.studiobravo.com.au/img/share.png" />
-	<meta property="og:image:type" content="image/png" />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
-	<link rel="image_src" href="http://www.studiobravo.com.au/img/share.png" />
-
-	<script>
-		// Picture element HTML5 shiv
-		document.createElement("picture");
-	</script>
-	<script src="/js/libs/picturefill.min.js" async></script>
-
-
-	<!--[if lt IE 9]>
-        <script src="js/libs/html5shiv.min.js"></script>
-        <script src="js/libs/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body class="{{bodyClass}}">
 
-	<div class="bg-white container">
-		<div id="outdated"></div>
-	</div>
+	{{> header}}
 
-	<div class="bg-white container main-container">
-		{{> header}}
+	<div class="container main-container">
 		{{> body}}
-	</div>
-
-	<a href="#" class="close-link visible-xs" tabindex="-1" title="Close navigation"><span>Close work</span></a>
-	<div class="site-canvas" role="navigation">
-		<a href="#" class="close-link  hidden-xs" tabindex="-1" title="Close navigation"><span>Close work</span></a>
-		<div class="site-menu">
-			<div class="nav-tiles">
-				
-				<div class="tile-project tile-ugivo">
-					<a href="/casestudy-ugivo.html" title="UGIVO case study">
-						<h2 class="tile-header h1">We helped give<br /> the gift that<br /> people want to<br /> receive.</h2>
-						<p class="what-we-did">See what we did</p>
-					</a>
-				</div>
-				<div class="tile-project tile-qwezzi">
-					<a href="/casestudy-kwezzi.html" title="Kwezzi case study">
-						<h2 class="tile-header h1">We helped this<br /> start-up<br /> revolutionise<br /> communication</h2>
-						<p class="what-we-did">See what we did</p>
-					</a>
-					<img src="/img/svg/speechbubbles.svg" class="speachbubbles" />
-				</div>
-				
-				<div class="tile-project tile-feature tile-acm">
-					<a href="/casestudy-arts-centre-melbourne.html" title="Arts Centre Melbourne case study">
-						<h2 class="tile-header h1">We helped<br /> Melbourne’s most<br /> iconic arts venue get<br /> on with the show.</h2>
-						<p class="what-we-did">See what we did</p>
-					</a>
-					<picture>
-						<source srcset="/img/home/img_acm.png 1x, /img/home/img_acm@2x.png 2x" media="(min-width: 768px)">
-						<img srcset="/img/home/img_acm.png" alt="Arts Centre Melbourne website displayed on Mac">
-					</picture>
-
-				</div>
-
-				<div class="tile-project tile-glow">
-					<a href="/casestudy-glow.html" title="Glow case study">
-						<h2 class="tile-header h1">We helped pioneer<br /> a new way to<br /> capture customer<br /> feedback</h2>
-						<p class="what-we-did">See what we did</p>
-					</a>
-					<img src="/img/svg/clouds.svg" class="clouds" />
-
-					<img src="/img/svg/character.svg" class="character" />
-
-				</div>
-				<div class="tile-project tile-roller">
-					<a href="/casestudy-roller.html" title="Roller case study">
-						<h2 class="tile-header h1">We helped Roller<br /> achieve a<br /> multimillion-dollar<br /> evaluation</h2>
-						<p class="what-we-did">See what we did</p>
-					</a>
-					<picture>
-						<source srcset="/img/home/roller-img.jpg 1x, /img/home/roller-img@2x.jpg 2x">
-						<img srcset="/img/home/roller-img.jpg" alt="Picture of a Roller event">
-					</picture>
-				</div>
-				<div class="tile-project tile-hth tile-feature ">
-					<a href="/casestudy-hometimber-and-hardware.html" title="Hometimber and Hardware case study">
-						<h2 class="tile-header h1">We helped increase <br /> sales in a highly<br /> competitive market.</h2>
-						<p class="what-we-did">See what we did</p>
-					</a>
-					<picture>
-						<source srcset="/img/home/img_hth.png 1x, /img/home/img_hth@2x.png 2x" media="(min-width: 768px)">
-						<img srcset="/img/home/m-img_hth.png" alt="Hometimber website displayed on iPad and Hometimber characters">
-					</picture>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	{{> footer}}
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
-	{{#if production}}
-	<script src="/js/scripts.min.js"></script>
-	{{else}}
 	<script src="/js/plugins.js"></script>
 	<script src="/js/src.js"></script>
 	<script src="/js/main.js"></script>
-	{{/if}}
 
 </body>
 

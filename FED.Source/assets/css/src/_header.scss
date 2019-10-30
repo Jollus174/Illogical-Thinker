@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Global header class
+   ========================================================================== */
+
+.top-picture {
+	position: absolute;
+	background: url(../img/background-top-tile.jpg) repeat-x;
+	width: 100%;
+	height: 261px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+main {
+	min-height: 1000px;
+}
+
+// @media (min-width: $screen-sm-min) {
+
+// 	header {
+// 		padding: 60px 0 0;
+// 	}
+
+// 	nav {
+// 		float: right;
+// 		margin: 0;
+
+// 		li {
+// 			height: 50px;
+// 			margin-left: 40px;
+// 		}
+// 	}
+
+// 	.logo {
+// 		width: 110px;
+// 		height: 48px;
+// 		float: left;
+// 	}
+
+// }

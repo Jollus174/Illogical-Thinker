@@ -1,0 +1,345 @@
+/* ==========================================================================
+   Structural elements
+   ========================================================================== */
+
+.bg-white {
+	background: $white;
+	max-width: 1440px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+section {
+	margin: 50px 0;
+
+	&:first-child {
+		margin-top: 40px;
+	}
+
+	picture {
+		display: block;
+
+		img {
+			display: block;
+		}
+	}
+}
+
+.main-container {
+	width: auto !important;
+}
+
+ul {
+	list-style: none;
+}
+
+.styled-list {
+	list-style: disc;
+}
+
+ol.nested-ol {
+	padding-left: 0;
+	margin-top: 25px;
+
+	li {
+		margin-left: 20px;
+		margin-bottom: 5px;
+	}
+}
+
+.container-wide {
+	@include clearfix;
+	padding: 0;
+}
+
+.container-xs-full {
+	@include clearfix;
+}
+
+.bg-dark {
+	background-color: $brand-secondary;
+
+	h2,
+	p {
+		color: $white;
+	}
+}
+
+.col-50 {
+	width: 50%;
+	float: left;
+}
+
+.other-clients {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	li {
+		width: 30%;
+		text-align: center;
+		margin-bottom: 45px;
+		align-self: center;
+
+		img {
+			max-width: 60%;
+		}
+	}
+}
+
+.founders {
+	img {
+		width: 100%;
+	}
+}
+
+.cs-header {
+	margin-bottom: -30px;
+
+	.h3 {
+		@include fluid-type(font-size, 320px, 992px, $h3-size-xs, $h3-size-sm);
+		line-height: 1.31;
+	}
+
+	&.mf-title {
+		h1 {
+			width: min-content;
+		}
+	}
+}
+
+.picture-error {
+	margin-top: 20px;
+	display: block;
+}
+
+.container-margin-3 {
+	margin-top: 40px;
+}
+
+.container-margin-4 {
+	margin-top: 20px;
+}
+
+.blog-listing {
+	h2 {
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 1.63;
+		letter-spacing: 0.3px;
+	}
+}
+
+.container-narrow {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.container-wide {
+	.col-sm-6 {
+		padding: 0;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	//default padding is 15px. this is offset containers
+	// .container-narrow {
+	// 	padding-left: 20px;
+	// 	padding-right: 20px;
+	// }
+
+	//for the full width mobile containers
+	.container-xs-full {
+		padding: 0;
+		//overflow-x: hidden;
+	}
+
+	.main {
+		overflow: hidden;
+	}
+
+	.other-clients {
+		li {
+			&:first-child {
+				max-height: 80%;
+			}
+
+			&:nth-last-child(-n + 3) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	section {
+		margin: 60px 0;
+
+		&:first-child {
+			margin-top: 60px;
+		}
+	}
+
+	.other-clients {
+		li {
+			width: 25%;
+			margin-bottom: 45px;
+
+			&:nth-last-child(-n + 4) {
+				margin-bottom: 0;
+			}
+
+			img {
+				max-width: 60%;
+			}
+		}
+	}
+
+	.pull-right-sm {
+		float: right;
+	}
+
+	.picture-error {
+		margin-top: 35px;
+	}
+
+	.blog-listing {
+		h2 {
+			margin-bottom: 10px;
+		}
+	}
+
+	.container-margin-6 {
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	.container {
+		width: auto;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.founders {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.container-margin-5 {
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	section {
+		margin: 100px 0;
+	}
+
+	.other-clients {
+		li {
+			margin-bottom: 90px;
+		}
+	}
+
+	.cs-header {
+		margin-bottom: -50px;
+
+		.col-md-6 {
+			padding-top: 0;
+		}
+
+		.h3 {
+			padding-top: 15px;
+		}
+	}
+
+	.picture-error {
+		margin-top: 50px;
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+	section {
+		margin: 150px 0;
+
+		&:first-child {
+			margin-top: 95px;
+			margin-bottom: 80px;
+		}
+	}
+
+	.container-margin-1 {
+		margin-bottom: -50px;
+	}
+
+	.container-margin-2 {
+		margin-top: 80px;
+	}
+
+	.container-margin-3,
+	.container-margin-4 {
+		margin-top: 60px;
+	}
+
+	.container-wide {
+		width: 100%;
+	}
+
+	.container-narrow {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.container {
+		max-width: 1440px;
+		width: auto;
+
+		section {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.container-narrow {
+			width: 1204px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.container-xs-full {
+			max-width: 1174px;
+		}
+
+		.container-xs-full.container-wide {
+			max-width: none;
+		}
+
+		.cs-header {
+			margin-bottom: -90px;
+		}
+	}
+
+	.immersive {
+		.container,
+		header {
+			max-width: 1210px;
+		}
+	}
+
+	.blog-listing {
+		p {
+			font-size: 18px;
+			line-height: 1.67;
+			letter-spacing: normal;
+		}
+	}
+}
