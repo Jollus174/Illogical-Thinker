@@ -3,3 +3,7 @@ FED.Source/node_modules/
 public/
 Website/
 *.map
+.sass-lint.yml
+.prettierrc
+.jshintrc
+.editorconfig

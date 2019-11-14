@@ -12,385 +12,269 @@ h4,
 .h4,
 h5,
 .h5 {
-	font-weight: 500;
-	margin-top: 0;
+  font-weight: 500;
+  margin-top: 0;
 }
 
 h1,
 .h1 {
-	@include fluid-type(font-size, 320px, 768px, $h1-size-xs, $h1-size-sm);
-	font-size: em($h1-size-xs);
-	line-height: 1.38;
-	margin-bottom: 0.625em;
-	letter-spacing: -0.3px;
-}
-
-@media (max-width: 360px) {
-	.page-home {
-		h1 {
-			font-size: 27px;
-		}
-	}
+  font-size: em($h1-size-xs);
+  line-height: 1.38;
+  margin-bottom: 0.625em;
+  // letter-spacing: -0.3px;
 }
 
 h2,
 .h2 {
-	@include fluid-type(font-size, 320px, 768px, 26px, 44px);
-	font-family: $slabo;
-	// font-size: 26px;
-	font-weight: 400;
-	// margin-bottom: 1.25em;
-	line-height: 1.55;
-
-	&.tile-header {
-		@include fluid-type(font-size, 320px, 768px, $h6-size-xs, $h1-size-sm);
-		font-size: em($h1-size-xs);
-		line-height: 1.24;
-		letter-spacing: -0.2px;
-		margin: 0;
-		color: $white;
-		font-weight: 500;
-	}
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.55;
 }
 
 h3,
 .h3 {
-	line-height: (22 / 18);
-	margin-bottom: 1em;
-	color: $mid-grey;
+  line-height: (22 / 18);
+  margin-bottom: 1em;
 }
 
 h4,
 .h4 {
-	font-size: em($h4-size-xs);
-	text-transform: none;
+  font-size: em($h4-size-xs);
 }
 
 h5,
 .h5 {
-	font-size: em($h5-size-xs);
+  font-size: em($h5-size-xs);
 }
 
 h6,
 .h6 {
-	font-size: em($h6-size-xs);
+  font-size: em($h6-size-xs);
 }
 
 p {
-	margin-bottom: 10px;
-	letter-spacing: 0.3px;
-	line-height: 1.73;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+  line-height: 1.73;
 
-	strong {
-		font-weight: 500;
-	}
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
-
-.visit-link {
-	font-weight: 500;
-	display: inline-block;
-	margin: 20px 0 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 address {
-	margin-bottom: 0;
-	line-height: 1.73;
+  margin-bottom: 0;
+  line-height: 1.73;
 }
 
 a {
-	color: $link-color;
-	transition: color $short-trans;
-	font-weight: 500;
-	text-decoration: none;
+  color: $link-color;
+  transition: color $short-trans;
+  font-weight: 500;
+  text-decoration: none;
 
-	&:hover,
-	&:active,
-	&:focus {
-		color: $link-color;
-	}
+  &:hover,
+  &:active,
+  &:focus {
+    color: $link-color;
+  }
 }
 
 ul {
-	padding: 0;
-	margin: 0;
-	// list-style: none;
+  padding: 0;
+  margin: 0;
+  // list-style: none;
 
-	&.styled-list {
-		li {
-			position: relative;
-			padding-left: 5px;
-			margin-left: 30px;
-			margin-bottom: 10px;
+  &.styled-list {
+    li {
+      position: relative;
+      padding-left: 5px;
+      margin-left: 30px;
+      margin-bottom: 10px;
 
-			&:last-child {
-				margin-bottom: 0;
-			}
-
-			// &::before {
-			// 	content: "";
-			// 	position: absolute;
-			// 	width: 8px;
-			// 	height: 2px;
-			// 	top: 13px;
-			// 	background: $brand-primary;
-			// 	left: 0;
-			// }
-		}
-	}
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 dl {
-	color: $mid-grey;
-	margin-top: 20px;
+  color: $mid-grey;
+  margin-top: 20px;
 
-	dt,
-	dd {
-		font-size: em(14px);
-		font-weight: normal;
-		margin-bottom: 10px;
-	}
+  dt,
+  dd {
+    font-size: em(14px);
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
 }
 
 blockquote {
-	@include fluid-type(font-size, 320, 992px, 26px, 44px);
+  text-align: center;
+  border: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: (30 / 19);
+  color: #a7a9ac;
 
-	text-align: center;
-	border: 0;
-	margin-bottom: 0;
-	padding: 0;
+  em {
+    font-style: normal;
+    font-weight: normal;
+  }
 
-	p {
-		line-height: 1.32;
-		letter-spacing: -0.4px;
-		color: $brand-primary;
+  p {
+    line-height: 1.32;
+    letter-spacing: -0.4px;
+    color: $brand-primary;
 
-		&:first-child {
-			position: relative;
-			font-family: $quote-font;
+    &:first-child {
+      position: relative;
+      font-family: $quote-font;
 
-			&::before,
-			&::after {
-				content: "“";
-				color: $brand-primary;
-				display: inline-block;
-			}
+      &::before,
+      &::after {
+        content: "“";
+        color: $brand-primary;
+        display: inline-block;
+      }
 
-			&::before {
-				padding-right: 5px;
-			}
+      &::before {
+        padding-right: 5px;
+      }
 
-			&::after {
-				padding-left: 5px;
-			}
-		}
-	}
-
-	.by {
-		color: $mid-grey;
-		font-size: em(16px, 26px);
-	}
-
-	&.no-quotes p {
-		&::before,
-		&::after {
-			display: none;
-		}
-	}
-}
-
-.text-small {
-	font-size: em(14px);
+      &::after {
+        padding-left: 5px;
+      }
+    }
+  }
 }
 
 @media (min-width: $screen-sm-min) {
-	h1,
-	.h1 {
-		@include fluid-type(font-size, 768px, 992px, $h1-size-sm, $h1-size-md);
-		font-size: em($h1-size-sm);
-		line-height: 1.23;
-	}
+  h1,
+  .h1 {
+    @include fluid-type(font-size, 768px, 992px, $h1-size-sm, $h1-size-md);
+    font-size: em($h1-size-sm);
+    line-height: 1.23;
+  }
 
-	h2,
-	.h2 {
-		// @include fluid-type(font-size, 768px, 992px, $h2-size-sm, $h2-size-md);
-		// font-size: em($h2-size-sm);
-		font-weight: 400;
-		margin-bottom: 30px;
+  h2,
+  .h2 {
+    font-size: em($h2-size-sm);
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
 
-		&.tile-header {
-			@include fluid-type(font-size, 768px, 992px, $h1-size-sm, $h1-size-md);
-			font-size: em($h1-size-sm);
-			letter-spacing: -0.5px;
-		}
-	}
+  h3,
+  .h3 {
+    font-size: em($h3-size-sm);
+  }
 
-	h3,
-	.h3 {
-		font-size: em($h3-size-sm);
-	}
+  p {
+    margin: 0 0 15px;
+  }
 
-	p,
-	.wysiwyg ul {
-		margin: 0 0 15px;
-	}
+  ul.styled-list {
+    li {
+      margin-bottom: 25px;
+    }
+  }
 
-	.small-text {
-		font-size: 14px;
-	}
+  dl {
+    margin-top: 50px;
 
-	ul.styled-list {
-		li {
-			margin-bottom: 25px;
-			// padding-left: 35px;
+    dt,
+    dd {
+      float: left;
+      font-size: 16px;
+      line-height: 1.75;
+    }
 
-			// &::before {
-			// 	width: 11px;
-			// 	left: 5px;
-			// 	top: 15px;
-			// }
-		}
-	}
+    dt {
+      width: 25%;
+    }
 
-	dl {
-		margin-top: 50px;
+    dd {
+      width: 75%;
 
-		dt,
-		dd {
-			float: left;
-			font-size: 16px;
-			line-height: 1.75;
-		}
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
 
-		dt {
-			width: 25%;
-		}
-
-		dd {
-			width: 75%;
-
-			p {
-				margin-bottom: 0;
-			}
-		}
-	}
-
-	.visit-link {
-		margin: 20px 0 0;
-	}
-
-	blockquote {
-		.by {
-			color: $mid-grey;
-			font-size: 16px;
-		}
-	}
-
-	.date {
-		font-size: 18px;
-		font-weight: 500;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 2.11;
-		letter-spacing: normal;
-	}
-
-	.text-small {
-		font-size: 0.8182em;
-	}
-
-	hr {
-		margin: 2rem 0;
-	}
-}
-
-@media (max-width: $screen-sm-max) {
-	.center-tablet {
-		text-align: center;
-	}
+  hr {
+    margin: 2rem 0;
+  }
 }
 
 @media (min-width: $screen-md-min) {
-	h1,
-	.h1 {
-		@include fluid-type(font-size, 768px, 992px, $h1-size-md, 48px);
-		font-size: em($h1-size-md);
-	}
+  h1,
+  .h1 {
+    font-size: em($h1-size-md);
+  }
 
-	h2,
-	.h2 {
-		// @include fluid-type(font-size, 992px, 1220px, $h2-size-md, $h2-size-lg);
-		// font-size: em($h2-size-md);
+  h2,
+  .h2 {
+    font-size: em($h2-size-md);
+  }
 
-		&.tile-header {
-			@include fluid-type(font-size, 992px, 1220px, $h1-size-md, 48px);
-			font-size: em($h1-size-md);
-		}
-	}
+  h3,
+  .h3 {
+    font-size: em($h3-size-md, 22px);
+  }
 
-	h3,
-	.h3 {
-		font-size: em($h3-size-md, 22px);
-	}
+  h4,
+  .h4 {
+    font-size: em($h4-size-md);
+  }
 
-	h4,
-	.h4 {
-		font-size: em($h4-size-md);
-	}
+  h5,
+  .h5 {
+    font-size: em($h5-size-md);
+  }
 
-	h5,
-	.h5 {
-		font-size: em($h5-size-md);
-	}
+  h6,
+  .h6 {
+    font-size: em($h6-size-md);
+  }
 
-	h6,
-	.h6 {
-		font-size: em($h6-size-md);
-	}
-
-	p {
-		margin: 0 0 20px;
-	}
+  p {
+    margin: 0 0 20px;
+  }
 }
 
 @media (min-width: $screen-lg-min) {
-	h1,
-	.h1 {
-		font-size: em($h1-size-lg, 22px);
-	}
+  h1,
+  .h1 {
+    font-size: em($h1-size-lg, 22px);
+  }
 
-	h2,
-	.h2 {
-		// font-size: em($h2-size-lg, 22px);
+  h2,
+  .h2 {
+    font-size: em($h2-size-lg, 22px);
+  }
 
-		.main &.tile-header {
-			font-size: em($h1-size-lg, 22px);
-		}
+  h4,
+  .h4 {
+    font-size: em($h4-size-lg);
+  }
 
-		.nav-tiles &.tile-header {
-			font-size: em(44px, 22px);
-		}
-	}
+  h5,
+  .h5 {
+    font-size: em($h5-size-lg);
+  }
 
-	h4,
-	.h4 {
-		font-size: em($h4-size-lg);
-	}
+  h6,
+  .h6 {
+    font-size: em($h6-size-lg);
+  }
 
-	h5,
-	.h5 {
-		font-size: em($h5-size-lg);
-	}
-
-	h6,
-	.h6 {
-		font-size: em($h6-size-lg);
-	}
-
-	p {
-		margin: 0 0 40px;
-	}
+  p {
+    margin: 0 0 40px;
+  }
 }

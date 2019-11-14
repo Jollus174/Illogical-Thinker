@@ -7,8 +7,8 @@ $base-font-family: $mark-pro;
 $heading-font: $base-font-family;
 $quote-font: $slabo;
 
-$base-font-size: 16px;
-$base-line-height: 26px;
+$base-font-size: 14px;
+$base-line-height: 22px;
 
 $h1-size-xs: 32px;
 $h2-size-xs: 18px;
@@ -45,7 +45,7 @@ $double-spacing-unit: ($base-spacing-unit * 2);
 
 // Colour settings
 $purple: #5b59f8;
-$green: #00bf8c;
+$green: #2f4956;
 $dark-grey: #343e47;
 $mid-grey: #999ea3;
 $white: #fff;
@@ -69,14 +69,12 @@ $short-trans: 100ms;
 $reg-trans: 200ms;
 $long-trans: 300ms;
 
-$nav-trans: 400ms;
-
 /* ==========================================================================
    Bootstrap Overrides
    ========================================================================== */
 
 $text-color: $brand-secondary;
-$link-color: $brand-primary;
+$link-color: $white;
 $headings-color: $brand-secondary;
 
 $font-family-base: $base-font-family;
