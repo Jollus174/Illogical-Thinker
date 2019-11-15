@@ -2,7 +2,7 @@
 // bootstrap/affix.js
 // bootstrap/alert.js
 // bootstrap/button.js
-//= bootstrap/carousel.js
+// bootstrap/carousel.js
 // bootstrap/collapse.js
 // bootstrap/dropdown.js
 // bootstrap/tab.js
