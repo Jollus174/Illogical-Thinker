@@ -1,6 +1,38 @@
-.swiper-wrapper {
+.feature-info {
+	.swiper-navigation {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
 	.swiper-button-next,
 	.swiper-button-prev {
-		color: red;
+		position: static;
+		width: 31px;
+		height: 23px;
+		margin-top: initial;
+
+		&::after {
+			content: none;
+		}
+
+		&:focus {
+			outline: 1px dotted rgba(255, 255, 255, 0.5);
+		}
+	}
+
+	.swiper-button-next {
+		background: url(../img/arrow-right.png) top left no-repeat;
+
+		&:hover {
+			background-image: url(../img/arrow-right-hover.png);
+		}
+	}
+
+	.swiper-button-prev {
+		background: url(../img/arrow-left.png) top left no-repeat;
+
+		&:hover {
+			background-image: url(../img/arrow-left-hover.png);
+		}
 	}
 }
