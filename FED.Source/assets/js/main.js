@@ -17,12 +17,38 @@ $(function() {
 				prevEl: '.swiper-button-prev'
 			},
 			loop: true,
+			grabCursor: true,
 			breakpoints: {
 				767: {}
 			}
 		});
 
+		var oldSlideIndex = 0;
+
 		homepageSwiper.init();
+
+		$('.feature-descriptions')
+			.children()
+			.first()
+			.show();
+
+		homepageSwiper.on('slideChange', function() {
+			console.log(homepageSwiper.realIndex);
+
+			// fade element
+			var $oldFeature = $('.feature-descriptions')
+				.children()
+				.eq(oldSlideIndex);
+			var $newFeature = $('.feature-descriptions')
+				.children()
+				.eq(homepageSwiper.realIndex);
+
+			$oldFeature.fadeOut('fast', function() {
+				$newFeature.fadeIn('fast');
+				// then update old index
+				oldSlideIndex = homepageSwiper.realIndex;
+			});
+		});
 	}
 
 	//plugin function, place inside DOM ready function
