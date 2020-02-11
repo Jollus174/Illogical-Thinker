@@ -33,8 +33,10 @@ h2,
 
 h3,
 .h3 {
+  font-size: 18px;
   line-height: (22 / 18);
-  margin-bottom: 1em;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 h4,
@@ -152,6 +154,13 @@ blockquote {
       }
     }
   }
+}
+
+.section-title {
+  font-family: $heading-font;
+  text-transform: uppercase;
+  color: $dark-green;
+  text-shadow: -1px 1px 1px #40565f;
 }
 
 @media (min-width: $screen-sm-min) {

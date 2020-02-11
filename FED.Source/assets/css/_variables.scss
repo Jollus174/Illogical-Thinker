@@ -3,11 +3,11 @@
    ========================================================================== */
 
 //Type settings
-$base-font-family: $mark-pro;
-$heading-font: $base-font-family;
+$base-font-family: $arial;
+$heading-font: $arvo;
 $quote-font: $slabo;
 
-$base-font-size: 14px;
+$base-font-size: 13px;
 $base-line-height: 22px;
 
 $h1-size-xs: 32px;
@@ -44,12 +44,11 @@ $half-spacing-unit: ($base-spacing-unit / 2);
 $double-spacing-unit: ($base-spacing-unit * 2);
 
 // Colour settings
-$purple: #5b59f8;
 $green: #2f4956;
+$dark-green: #111d25;
 $dark-grey: #343e47;
 $mid-grey: #999ea3;
 $white: #fff;
-$mitreblue: #0060af;
 $light-grey: #f4f4f4;
 
 $black: #000;

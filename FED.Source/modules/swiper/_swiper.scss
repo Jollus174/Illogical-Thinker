@@ -2,19 +2,32 @@
 	cursor: grab;
 }
 
+.swiper-wrapper {
+	overflow: hidden;
+}
+
 .feature-info {
 	.swiper-navigation {
 		display: flex;
 		flex-flow: row nowrap;
+		align-items: flex-start;
+		margin-bottom: 15px;
+
+		.section-title {
+			flex-grow: 1;
+			text-align: right;
+			margin-right: 10px;
+		}
 	}
 
 	.swiper-button-next,
 	.swiper-button-prev {
 		position: static;
 		width: 31px;
-		height: 23px;
+		height: 30px;
 		margin-top: initial;
 		opacity: 0.8;
+		margin-left: -2px;
 		transition: opacity $short-trans ease;
 
 		&::after {
@@ -33,7 +46,6 @@
 	.swiper-button-next {
 		background: url(../img/arrow-right.png) top left no-repeat;
 
-		&:focus,
 		&:active {
 			background-image: url(../img/arrow-right-hover.png);
 		}
@@ -42,7 +54,6 @@
 	.swiper-button-prev {
 		background: url(../img/arrow-left.png) top left no-repeat;
 
-		&:focus,
 		&:active {
 			background-image: url(../img/arrow-left-hover.png);
 		}
