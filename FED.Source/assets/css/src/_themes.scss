@@ -19,33 +19,77 @@
 	border-radius: 1em 4em 1em 1em;
 
 	.feature-scroller {
-		width: 700px;
 		border-radius: 0.65em 0em 0em 0.65em;
 		border: 1px solid $black;
 		overflow: hidden;
+
+		@media (min-width: $screen-sm-min) {
+			width: 700px;
+		}
 	}
 
 	.page-home & {
-		display: flex;
-		flex-flow: row nowrap;
 		padding: 0;
+
+		@media (min-width: $screen-sm-min) {
+			display: flex;
+			flex-flow: row nowrap;
+		}
 	}
 }
 
 // todo: move this
 .feature-info {
-	width: 244px;
-	background: url(../img/small-line.jpg) top left repeat #15323c;
+	background: url(../img/small-line.jpg) repeat top left #15323c;
 	border-radius: 0 3.6em 0.5em 0;
 	border: 1px solid $black;
+
+	@media (min-width: $screen-sm-min) {
+		width: 244px;
+	}
 }
 
 .feature-descriptions {
-	max-height: 260px;
 	overflow: hidden;
+	height: 200px !important;
+
+	@media (min-width: $screen-sm-min) {
+		max-height: 260px;
+	}
 }
 //
 
 .content-box {
 	border-radius: 1em;
+}
+
+.mosaic-block {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 100%;
+	background: #111 url(../img/progress.gif) no-repeat center;
+	border: #28394b solid 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+	.mosaic-overlay {
+		opacity: 0;
+		background: url(../img/bg-black.png);
+		transition: opacity $reg-trans ease;
+	}
+
+	&:hover {
+		.mosaic-overlay {
+			opacity: 0.95;
+		}
+	}
+}
+
+.mosaic-backdrop {
+	// display: none;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: #111;
 }
