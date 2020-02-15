@@ -1,0 +1,16 @@
+<div id="flash-warning" class="alert alert-danger text-center">
+	<p>Flash must be enabled in order to view this. Please follow the instructions <a href="https://enableflashplayer.com/" target="_blank">here</a> and refresh this page.</p>
+</div>
+
+<script>
+	var hasFlash = false;
+	try {
+			hasFlash = Boolean(new ActiveXObject('ShockwaveFlash.ShockwaveFlash'));
+	} catch(exception) {
+			hasFlash = ('undefined' != typeof navigator.mimeTypes['application/x-shockwave-flash']);
+	}
+
+	if (hasFlash) {
+		document.getElementById('flash-warning').style.display = "none";
+	}
+</script>

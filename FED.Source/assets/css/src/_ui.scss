@@ -102,3 +102,14 @@ button.close {
 		opacity: 0.9;
 	}
 }
+
+.alert {
+	a {
+		color: $black;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

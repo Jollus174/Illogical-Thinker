@@ -14,6 +14,13 @@ module.exports = function(grunt) {
 			},
 			src: ['<%= settings.root %>/templates/pages/*.hbs'],
 			dest: '<%= settings.dist %>'
+		},
+		flash: {
+			options: {
+				layout: ['<%= settings.root %>/templates/layouts/flash.hbs']
+			},
+			src: ['<%= settings.root %>/templates/flash/*.hbs'],
+			dest: '<%= settings.dist %>/work/'
 		}
 	};
 };
