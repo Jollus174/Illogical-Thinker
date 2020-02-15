@@ -156,11 +156,28 @@ blockquote {
   }
 }
 
+$section-title-color: rgba(0, 0, 0, 0.7);
+$section-title-shadow-color: #384b53;
 .section-title {
   font-family: $heading-font;
   text-transform: uppercase;
-  color: $dark-green;
-  text-shadow: -1px 1px 1px #40565f;
+  color: $section-title-color;
+  text-shadow: -1px 1px 1px $section-title-shadow-color;
+  display: block;
+  position: relative;
+  z-index: 1;
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 6px;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 2px;
+  //   z-index: -1;
+  //   background-color: $section-title-color;
+  //   box-shadow: -1px 1px 1px $section-title-shadow-color;
+  // }
 }
 
 @media (min-width: $screen-sm-min) {

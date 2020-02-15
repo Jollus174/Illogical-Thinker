@@ -5,40 +5,113 @@ bodyClass: page-work
 
 <main class="main">
 	<div class="feature-box">
-		Motion Graphics
+		<span class="section-title">Motion Graphics &amp; Animation</span>
 		<div class="row">
-			<div class="col-sm-4">
-				<div class="mosaic-block fade">
-					<a href="http://player.vimeo.com/video/31353179?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1"
-						rel="shadowbox height=405; width=720" class="mosaic-overlay">
-						<div class="details">
-							<p class="icon_title">BAMMD Teaser</p>
-							<p class="icon_text">Teaser for Multimedia Design Expo held November 18th.</p>
-						</div>
-					</a>
-					<div class="mosaic-backdrop">
-						<img src="images/motion_bammd.jpg" />
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				bulb
-			</div>
-			<div class="col-sm-4">
-				flex
-			</div>
-			<div class="col-sm-4">
-				Transperth
-			</div>
-			<div class="col-sm-4">
-				Atomic
-			</div>
-			<div class="col-sm-4">
-				Perplex
-			</div>
-			<div class="col-sm-4">
-				Satan
-			</div>
+			{{> mosaic-block 
+				source="http://player.vimeo.com/video/31353179?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" 
+				title="BAMMD Teaser" 
+				description="Teaser for Multimedia Design Expo held November 18th." 
+				image="img/work/motion-bammd.jpg"
+			}}			
+			{{> mosaic-block 
+				source="http://player.vimeo.com/video/25411123?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" 
+				title="How it Works" 
+				description="The Incandescent Lightbulb" 
+				image="img/work/motion-lightbulb.jpg"
+			}}			
+			{{> mosaic-block 
+				source="http://player.vimeo.com/video/25408355?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" 
+				title="Design Principles 101" 
+				description="The Flexibility vs. Usability Tradeoff" 
+				image="img/work/motion-flexuse.jpg"
+			}}
+			{{> mosaic-block 
+				source="http://player.vimeo.com/video/25403800?title=0&byline=0&portrait=0&autoplay=1" 
+				title="Transperth Widget" 
+				description="Advertisement" 
+				image="img/work/motion-transperth.jpg"
+			}}
+			{{> mosaic-block 
+				source="http://player.vimeo.com/video/25406039?title=0&byline=0&portrait=0&autoplay=1" 
+				title="How it Works" 
+				description="Dismantling the Atomic Bomb" 
+				image="img/work/motion-atomic.jpg"
+			}}
+			{{> mosaic-block 
+				noShadowBox="true"
+				source="/work/tranceporter.html" 
+				title="Animated Album Cover" 
+				description="Short Preview" 
+				image="img/work/motion-album-cover.jpg"
+			}}
+		</div>
+	</div>
+
+	<div class="feature-box">
+		<span class="section-title">Graphic Design</span>
+		<div class="row">
+			{{> mosaic-block 
+				source="img/work/graphic-big-element.jpg" 
+				title="Element Typography" 
+				description="Experimental piece created using Cinema 4D and Photoshop." 
+				image="img/work/graphic-element.jpg"
+			}}
+			{{> mosaic-block 
+				source="img/work/graphic-big-viscosity.jpg" 
+				title="Figmental Viscosity" 
+				description="Experimental piece created using Cinema 4D and Photoshop." 
+				image="img/work/graphic-viscosity.jpg"
+			}}
+			{{> mosaic-block 
+				source="img/work/graphic-big-planets.jpg" 
+				title="Voyage Poster" 
+				description="Poster created for display at BAMMD expo." 
+				image="img/work/graphic-planets.jpg"
+			}}
+			{{> mosaic-block 
+				source="img/work/graphic-big-album-cover.jpg" 
+				title="Perplex - Tranceporter" 
+				description="Poster promoting album of psytrance producer 'DJ Perplex'" 
+				image="img/work/graphic-album-cover.jpg"
+			}}
+			{{> mosaic-block 
+				source="img/work/graphic-big-payday.jpg" 
+				title="Young UN Women" 
+				description="Poster promoting Equal Pay Day event" 
+				image="img/work/graphic-payday.jpg"
+			}}
+			{{> mosaic-block 
+				source="img/work/graphic-big-ellington.jpg" 
+				title="Young UN Women" 
+				description="Ellington Jazz Poster" 
+				image="img/work/graphic-ellington.jpg"
+			}}
+			{{> mosaic-block 
+				source="img/work/graphic-big-self-portrait.jpg" 
+				title="Self Portrait" 
+				description="Photoshop Experiment" 
+				image="img/work/graphic-self-portrait.jpg"
+			}}
+		</div>
+	</div>
+
+	<div class="feature-box">
+		<span class="section-title">Actionscript Coding</span>
+		<div class="row">
+			{{!-- {{> mosaic-block 
+				noShadowBox="true"
+				source="/work/cyborg-x11.html" 
+				title="Cyborg X11 Mobile Preview" 
+				description="Interactive Information Brochure" 
+				image="img/work/action-cyborg.jpg"
+			}} --}}
+			{{> mosaic-block 
+				noShadowBox="true"
+				source="/work/graviton-y.html" 
+				title="Graviton Y" 
+				description="Experimental Flash Game" 
+				image="img/work/action-graviton-y.jpg"
+			}}
 		</div>
 	</div>
 </main>

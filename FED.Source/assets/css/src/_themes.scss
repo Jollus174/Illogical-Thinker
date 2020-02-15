@@ -68,33 +68,44 @@
 	border-radius: 1em;
 }
 
-.mosaic-block {
-	position: relative;
-	overflow: hidden;
-	height: 0;
-	padding-bottom: 100%;
-	background: #111 url(../img/progress.gif) no-repeat center;
-	border: #28394b solid 3px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 
-	.mosaic-overlay {
-		opacity: 0;
-		background: url(../img/bg-black.png);
-		transition: opacity $reg-trans ease;
+// move this to partial
+.page-work {
+	.feature-box {
+		.row {
+			margin: 0 -9px;
+		}
+
+		[class*="col-"] {
+			// overflow: hidden;
+			padding: 0 5px;
+		}
 	}
 
-	&:hover {
-		.mosaic-overlay {
-			opacity: 0.95;
+	.details {
+		margin: 15px 20px;
+		
+		.title {
+			font-style: oblique;
+			font-size: 18px;
+			line-height: 1.6;
+			letter-spacing: 0.05em;
+			color: #CCC;
+			margin-bottom: 5px;
+			padding: 0;
+		}
+
+		.description {
+			font-style: italic;
+			font-size: 13px;
+			position: relative;
+			text-shadow: 0px 2px 3px #222;
+			color: #999;
+			text-shadow: 1px 1px 0 rgb(0,0,0);
 		}
 	}
 }
 
-.mosaic-backdrop {
-	// display: none;
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background: #111;
+.page-flash {
+	padding-top: 50px;
 }
