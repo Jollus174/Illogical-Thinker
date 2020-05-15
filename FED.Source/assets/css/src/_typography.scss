@@ -180,6 +180,11 @@ $section-title-shadow-color: #384b53;
 	// }
 }
 
+.text-large {
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
 @media (min-width: $screen-sm-min) {
 	h1,
 	.h1 {

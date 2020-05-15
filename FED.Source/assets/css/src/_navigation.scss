@@ -2,17 +2,17 @@
    Navigation elements
    ========================================================================== */
 
-body {
-	//overflow: hidden;
-}
-
 nav {
-	margin-top: -68px;
+	margin-top: -52px;
 
 	ul {
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: flex-end;
+		justify-content: center;
+
+		@media (min-width: $screen-sm-min) {
+			justify-content: flex-end;
+		}
 	}
 
 	li {
@@ -27,7 +27,10 @@ nav {
 		opacity: 0.7;
 		text-align: center;
 		transition: opacity $reg-trans ease;
-		width: 128px;
+
+		@media (min-width: $screen-sm-min) {
+			width: 128px;
+		}
 
 		&:hover {
 			opacity: 1;

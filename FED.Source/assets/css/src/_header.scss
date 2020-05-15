@@ -13,7 +13,9 @@ header {
 
 		&:hover {
 			.floating-elephant {
-				top: 40px;
+				@media (min-width: $screen-xs-min) {
+					top: 40px;
+				}
 			}
 		}
 
@@ -26,15 +28,17 @@ header {
 			width: 70px;
 			height: 150px;
 			position: absolute;
-			top: 45px;
-			right: -35px;
+			top: initial;
+			bottom: 46px;
+			right: -11px;
 			background-image: url(../img/floating-elephant.png);
 			z-index: 1;
 			transition: top 800ms ease;
+
+			@media (min-width: $screen-xs-min) {
+				top: 45px;
+				bottom: initial;
+			}
 		}
 	}
-}
-
-main {
-	min-height: 500px;
 }

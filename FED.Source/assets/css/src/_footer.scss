@@ -5,10 +5,10 @@
 footer {
 	background: #121218;
 	color: $white;
-	position: relative;
 	min-height: 400px;
 	margin-top: -60px;
-	z-index: -1;
+	position: relative;
+	z-index: 0;
 
 	.footer-grass {
 		position: absolute;
@@ -18,5 +18,38 @@ footer {
 		height: 30px;
 		background-image: url(../img/footer-grass.png);
 		background-repeat: repeat-x;
+	}
+
+	.row {
+		margin-top: 50px;
+	}
+
+	.follow-me {
+		font-size: 14px;
+		font-weight: bold;
+		color: #0b464c;
+		margin-top: -2px;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-end;
+	}
+
+	.emblem-container {
+		width: 24px;
+		height: 24px;
+		margin: 2px;
+		display: inline-block;
+		opacity: 0.7;
+		transition: opacity $reg-trans ease;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.copyright {
+		color: #0b464c;
+		font-size: 11px;
+		line-height: 1.4;
 	}
 }

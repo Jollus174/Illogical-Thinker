@@ -1,7 +1,7 @@
 // jshint
 module.exports = {
 	options: {
-		jshintrc: '.jshintrc'
+		jshintrc: 'D:/Web Projects/.jshintrc'
 	},
 	main: ['<%= settings.src %>/js/src/*.js']
 };
