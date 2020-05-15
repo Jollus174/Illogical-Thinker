@@ -1,27 +1,27 @@
 ---
 noShadowBox: false
+isVideoEmbed: false
 ---
 
 <div class="col-sm-6 col-md-4">
 	<div class="mosaic-block fade">
 		{{#if noShadowBox}}
-			<a href="{{source}}" class="mosaic-overlay" target="_blank">
-		{{else}}
-			<a href="{{source}}"
-			rel="shadowbox height=405; width=720" class="mosaic-overlay">
-		{{/if}}
-			<div class="details">
-				<p class="title">{{title}}</p>
-				<p class="description">
-					{{description}}
-					{{#if noShadowBox}}
+		<a href="{{source}}" class="mosaic-overlay" target="_blank">
+			{{else}}
+			<a href="{{source}}" rel="shadowbox {{#if isVideoEmbed}}height=405; width=720{{/if}}" class="mosaic-overlay">
+				{{/if}}
+				<div class="details">
+					<p class="title">{{title}}</p>
+					<p class="description">
+						{{description}}
+						{{#if noShadowBox}}
 						<br>(new tab)
-					{{/if}}
-				</p>
+						{{/if}}
+					</p>
+				</div>
+			</a>
+			<div class="mosaic-backdrop">
+				<img src="{{image}}" />
 			</div>
-		</a>
-		<div class="mosaic-backdrop">
-			<img src="{{image}}" />
-		</div>
 	</div>
 </div>
