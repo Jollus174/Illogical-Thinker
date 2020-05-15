@@ -3,38 +3,38 @@
 	 ========================================================================== */
 
 header {
-  background: url(../img/background-top-tile.jpg) repeat-x;
+	background: url(../img/background-top-tile.jpg) repeat-x;
 
-  .logo {
-    position: relative;
-    max-width: 478px;
-    display: block;
-    margin-top: 50px;
+	.logo {
+		position: relative;
+		max-width: 478px;
+		display: block;
+		margin-top: 50px;
 
-    &:hover {
-      .floating-elephant {
-        top: 40px;
-      }
-    }
+		&:hover {
+			.floating-elephant {
+				top: 40px;
+			}
+		}
 
-    .cloud {
-      position: relative;
-      z-index: 2;
-    }
+		.cloud {
+			position: relative;
+			z-index: 2;
+		}
 
-    .floating-elephant {
-      width: 70px;
-      height: 150px;
-      position: absolute;
-      top: 45px;
-      right: -35px;
-      background-image: url(../img/floating-elephant.png);
-      z-index: 1;
-      transition: top 800ms ease;
-    }
-  }
+		.floating-elephant {
+			width: 70px;
+			height: 150px;
+			position: absolute;
+			top: 45px;
+			right: -35px;
+			background-image: url(../img/floating-elephant.png);
+			z-index: 1;
+			transition: top 800ms ease;
+		}
+	}
 }
 
 main {
-  min-height: 500px;
+	min-height: 500px;
 }

@@ -3,52 +3,52 @@
    ========================================================================== */
 
 body {
-  //overflow: hidden;
+	//overflow: hidden;
 }
 
 nav {
-  margin-top: -68px;
+	margin-top: -68px;
 
-  ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-  }
+	ul {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+	}
 
-  li {
-    margin-left: 5px;
-  }
+	li {
+		margin-left: 5px;
+	}
 
-  a {
-    background-color: $brand-primary;
-    color: $white;
-    padding: 5px 10px;
-    display: inline-block;
-    opacity: 0.7;
-    text-align: center;
-    transition: opacity $reg-trans ease;
-    width: 128px;
+	a {
+		background-color: $brand-primary;
+		color: $white;
+		padding: 5px 10px;
+		display: inline-block;
+		opacity: 0.7;
+		text-align: center;
+		transition: opacity $reg-trans ease;
+		width: 128px;
 
-    &:hover {
-      opacity: 1;
-      text-decoration: none;
-    }
+		&:hover {
+			opacity: 1;
+			text-decoration: none;
+		}
 
-    strong,
-    em {
-      display: block;
-    }
+		strong,
+		em {
+			display: block;
+		}
 
-    strong {
-      text-transform: uppercase;
-      font-size: 16px;
-      line-height: (21 / 16);
-    }
+		strong {
+			text-transform: uppercase;
+			font-size: 16px;
+			line-height: (21 / 16);
+		}
 
-    em {
-      font-size: 13px;
-    }
-  }
+		em {
+			font-size: 13px;
+		}
+	}
 }
 
 // .open {
