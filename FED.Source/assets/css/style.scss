@@ -75,6 +75,8 @@
 @import "src/themes";
 @import "src/print";
 
-// Modules
-@import "../../modules/breakpoints/breakpoints";
-@import "../../modules/swiper/swiper";
+// Pages
+@import "pages/home";
+@import "pages/work";
+@import "pages/contact";
+@import "pages/flash";
