@@ -1,0 +1,30 @@
+.page-contact {
+	.feature-box {
+		.contact-description,
+		.feature-info {
+			@media (min-width: $screen-md-min) {
+				width: 50%;
+			}
+		}
+
+		.contact-description {
+			padding: 20px;
+
+			.text-large {
+				margin-bottom: 15px;
+			}
+
+			p {
+				margin-bottom: 20px;
+			}
+		}
+
+		.feature-descriptions {
+			padding: 5px;
+		}
+
+		.contact-details {
+			margin: 15px 0;
+		}
+	}
+}

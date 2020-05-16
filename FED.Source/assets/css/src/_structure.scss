@@ -27,19 +27,6 @@ ul {
 	list-style: none;
 }
 
-.styled-list {
-	list-style: disc;
-}
-
-.container-wide {
-	@include clearfix;
-	padding: 0;
-}
-
-.container-xs-full {
-	@include clearfix;
-}
-
 @media (min-width: $screen-sm-min) {
 	section {
 		margin: 60px 0;

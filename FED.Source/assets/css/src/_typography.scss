@@ -21,7 +21,6 @@ h1,
 	font-size: em($h1-size-xs);
 	line-height: 1.38;
 	margin-bottom: 0.625em;
-	// letter-spacing: -0.3px;
 }
 
 h2,
@@ -79,6 +78,7 @@ a {
 	&:active,
 	&:focus {
 		color: $link-color;
+		text-decoration: none;
 	}
 }
 
@@ -136,7 +136,6 @@ blockquote {
 
 		&:first-child {
 			position: relative;
-			font-family: $quote-font;
 
 			&::before,
 			&::after {
