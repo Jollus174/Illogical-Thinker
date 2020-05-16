@@ -16,7 +16,7 @@ module.exports = {
 			debugInfo: true,
 			host: '0.0.0.0',
 			server: {
-				baseDir: '<%= settings.dist %>'
+				baseDir: '../Website'
 			},
 			open: false,
 			// notify: false

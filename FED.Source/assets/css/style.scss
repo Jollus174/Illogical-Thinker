@@ -4,15 +4,6 @@
    Imports
    ========================================================================== */
 
-// Modules
-@import "../../modules/breakpoints/breakpoints";
-@import "../../modules/swiper/swiper";
-
-// Base
-@import "src/fontstack";
-@import "variables";
-@import "mixins";
-
 // Bootstrap
 // Core variables and mixins
 @import "bootstrap/variables";
@@ -60,6 +51,11 @@
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
+// Base
+@import "src/fontstack";
+@import "variables";
+@import "mixins";
+
 // Plugins
 @import "plugins/mosaic";
 @import "plugins/shadowbox";
@@ -74,6 +70,10 @@
 @import "src/navigation";
 @import "src/themes";
 @import "src/print";
+
+// Modules
+@import "../../modules/breakpoints/breakpoints";
+@import "../../modules/swiper/swiper";
 
 // Pages
 @import "pages/home";

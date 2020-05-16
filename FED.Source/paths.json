@@ -1,8 +1,8 @@
 {
 	"iisHostname": "bravo.local",
 	"root": ".",
-		"src": "assets",
-		"dist": "../Website/",
+	"src": "assets",
+	"dist": "../Website/illogical",
 	"stylesDir": "css",
 	"scriptsDir": "js",
 	"imagesDir": "img",
