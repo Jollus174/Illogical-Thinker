@@ -1,11 +1,6 @@
-/* global Swiper */
-$(function() {
+/* global Swiper, Shadowbox */
+$(function () {
 	'use strict';
-
-	/* $('.immersive-navigation').on('click', function() {
-		var scrollTop = $('#scrollTo').offset().top - 20;
-		$('html, body').animate({ scrollTop: scrollTop }, 500);
-	}); */
 
 	const $body = $('body');
 
@@ -18,61 +13,30 @@ $(function() {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-			loop: false,
+			loop: true,
 			grabCursor: true,
 			breakpoints: {
 				767: {}
 			}
 		});
 
-		var oldSlideIndex = 0;
-
 		homepageSwiper.init();
 
-		$('.feature-descriptions')
-			.children()
-			.first()
-			.show();
+		var $allSlides = $('.feature-descriptions .feature-description');
+		$('.feature-descriptions').children().first().addClass('active');
 
-		homepageSwiper.on('slideChange', function() {
-			console.log(homepageSwiper.realIndex);
-
+		homepageSwiper.on('slideChange', function () {
 			// fade element
-			var $oldFeature = $('.feature-descriptions')
-				.children()
-				.eq(oldSlideIndex);
-			var $newFeature = $('.feature-descriptions')
-				.children()
-				.eq(homepageSwiper.realIndex);
-
-			$oldFeature.fadeOut('fast', function() {
-				$newFeature.fadeIn('fast');
-				// then update old index
-				oldSlideIndex = homepageSwiper.realIndex;
-			});
+			$allSlides.removeClass('active');
+			$allSlides.eq(homepageSwiper.realIndex).addClass('active');
 		});
+	}
+
+	if ($body.hasClass('page-home') || $body.hasClass('page-work')) {
+		Shadowbox.init();
 	}
 
 	if ($body.hasClass('page-work')) {
 		$('.fade').mosaic();
-		Shadowbox.init();
 	}
-
-	//plugin function, place inside DOM ready function
-	/* outdatedBrowser({
-		bgColor: '#343e47',
-		color: '#ffffff',
-		lowerThan: 'transform',
-		languagePath: '/lang/en.html'
-	}); */
-
-	//if iOS Safari then add css class
-	/* var ua = window.navigator.userAgent;
-	var iOS = /iPad/i.test(ua) || /iPhone/i.test(ua);
-	var webkit = /WebKit/i.test(ua);
-	var iOSSafari = iOS && webkit && !/CriOS/i.test(ua);
-
-	if (iOSSafari) {
-		$('.immersive-navigation').addClass('immersive-navigation-safari');
-	} */
 });
