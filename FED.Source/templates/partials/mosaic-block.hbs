@@ -1,14 +1,11 @@
----
-noShadowBox: false
-isVideoEmbed: false
----
-
 <div class="col-sm-6 col-md-4">
 	<div class="mosaic-block fade">
 		{{#if noShadowBox}}
 		<a href="{{source}}" class="mosaic-overlay" target="_blank">
 			{{else}}
-			<a href="{{source}}" rel="shadowbox {{#if isVideoEmbed}}height=405; width=720{{/if}}" class="mosaic-overlay">
+			<a href="{{source}}"
+				rel="shadowbox; {{#if isVideoEmbed}}width={{#if modalWidth}}{{modalWidth}}{{else}}720{{/if}}; height={{#if modalHeight}}{{modalHeight}}{{else}}405{{/if}};{{/if}}"
+				class="mosaic-overlay">
 				{{/if}}
 				<div class="details">
 					<p class="title">{{title}}</p>
