@@ -158,7 +158,9 @@ blockquote {
 $section-title-color: rgba(0, 0, 0, 0.7);
 $section-title-shadow-color: #384b53;
 .section-title {
-	font-family: $heading-font;
+	font-family: $rockwell;
+	font-weight: 700;
+	font-size: 14px;
 	text-transform: uppercase;
 	color: $section-title-color;
 	text-shadow: -1px 1px 1px $section-title-shadow-color;
