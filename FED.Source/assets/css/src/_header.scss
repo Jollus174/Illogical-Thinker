@@ -39,6 +39,10 @@ header {
 				top: 45px;
 				bottom: initial;
 			}
+
+			@media (min-width: $screen-sm-min) {
+				right: -50px;
+			}
 		}
 	}
 }

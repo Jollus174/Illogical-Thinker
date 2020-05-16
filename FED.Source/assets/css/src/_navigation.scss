@@ -3,7 +3,13 @@
    ========================================================================== */
 
 nav {
-	margin-top: -52px;
+	position: relative;
+	z-index: 5;
+	margin-top: -45px;
+
+	@media (min-width: $screen-sm-min) {
+		margin-top: -52px;
+	}
 
 	ul {
 		display: flex;
