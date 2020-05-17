@@ -1,5 +1,5 @@
 header {
-	background: url(../img/background-top-tile.jpg) repeat-x;
+	background: url(../img/background-top-tile.jpg) top center / contain repeat-x;
 
 	.logo {
 		position: relative;
@@ -9,8 +9,8 @@ header {
 
 		&:hover {
 			.floating-elephant {
-				@media (min-width: $screen-xs-min) {
-					top: 40px;
+				@media (min-width: $screen-sm-min) {
+					bottom: 38px;
 				}
 			}
 		}
@@ -24,20 +24,15 @@ header {
 			width: 70px;
 			height: 150px;
 			position: absolute;
-			top: initial;
-			bottom: 46px;
-			right: -11px;
+			bottom: 50px;
+			right: -4px;
 			background-image: url(../img/floating-elephant.png);
 			z-index: 1;
-			transition: top 800ms ease;
-
-			@media (min-width: $screen-xs-min) {
-				top: 45px;
-				bottom: initial;
-			}
+			transition: bottom 800ms ease;
 
 			@media (min-width: $screen-sm-min) {
-				right: -50px;
+				bottom: 28px;
+				right: -45px;
 			}
 		}
 	}

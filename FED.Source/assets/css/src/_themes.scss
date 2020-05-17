@@ -9,6 +9,14 @@
 	border: 5px #28394b solid;
 	background: url(../img/noise.jpg) top left repeat #131c26;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 2px $black, inset 0 0 25px 5px #1a2735;
+
+	&:first-child {
+		margin-top: 10px;
+
+		@media (min-width: $screen-xs-min) {
+			margin-top: 15px;
+		}
+	}
 }
 
 .feature-box {
