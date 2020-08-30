@@ -11,3 +11,5 @@
 //= bootstrap/modal.js
 // bootstrap/tooltip.js
 // bootstrap/popover.js
+
+//= ../../node_modules/swiper/swiper-bundle.js

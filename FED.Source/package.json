@@ -6,6 +6,7 @@
 		"cwebp-bin": "^3.2.0",
 		"imagemin": "~4.0.0",
 		"particles.js": "^2.0.0",
+		"swiper": "^6.1.2",
 		"tinify": "^1.4.0"
 	},
 	"devDependencies": {
